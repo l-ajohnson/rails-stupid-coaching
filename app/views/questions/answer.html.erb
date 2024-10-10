@@ -1,1 +1,10 @@
-<h1>@answers</h1>
+<form action="answer" data-turbo="false" method="get">
+  <input type="text" name="answer">
+  <input type="submit" value="Ask!">
+</form>
+
+
+
+<h1><%= @answer %></h1>
+
+<%= link_to "ask a question", root_path %>
